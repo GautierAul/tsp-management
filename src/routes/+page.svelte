@@ -26,7 +26,7 @@
 				class="flex flex-col gap-4 items-center justify-center bg-black bg-opacity-40 p-8 w-full text-center"
 				transition:slide={{ delay: 250, duration: 1000 }}
 			>
-				<span class="text-4xl font-bold">Team Spirit & Perfomrance</span>
+				<span class="text-4xl font-bold">Team Spirit & Performance</span>
 				<span class="text-2xl font-semibold">
 					Augmentez votre impact managerial pour des performances collectives
 				</span>
