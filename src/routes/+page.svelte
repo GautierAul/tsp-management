@@ -28,7 +28,7 @@
 			>
 				<span class="text-4xl font-bold">Team Spirit & Performance</span>
 				<span class="text-2xl font-semibold">
-					Augmentez votre impact managerial pour des performances collectives
+					Augmentez votre impact managerial pour vos performances collectives
 				</span>
 			</div>
 		{/if}
