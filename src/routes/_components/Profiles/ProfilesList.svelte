@@ -1,8 +1,12 @@
 <script lang="ts">
-	import { slide } from 'svelte/transition';
-	import ProfileContent from './ProfileContent.svelte';
+	import { onMount } from 'svelte';
 
 	type Profiles = -1 | 0 | 1 | 2;
+
+	let hasLoaded: boolean = false;
+	onMount(() => {
+		hasLoaded = true;
+	});
 
 	let selectedProfile: Profiles = 0;
 
@@ -25,7 +29,7 @@
 		selectedProfile = value;
 	};
 
-	$: if (selectedProfile || selectedProfile === 0) {
+	$: if (hasLoaded && (selectedProfile || selectedProfile === 0)) {
 		const container = document.getElementById('profile-content-container');
 		const profileContent = document.getElementById('profile-content');
 		if (container || profileContent) {
