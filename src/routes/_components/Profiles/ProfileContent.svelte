@@ -3,15 +3,8 @@
 	import { slide } from 'svelte/transition';
 
 	export let content: string = '';
-
-	let show: boolean = false;
-	setTimeout(() => {
-		show = true;
-	}, 1000);
 </script>
 
-<!-- {#if show} -->
-<span>
+<div class="w-full">
 	{@html content}
-</span>
-<!-- {/if} -->
+</div>
