@@ -23,7 +23,7 @@
 		<div
 			id="home"
 			class={`flex items-center justify-center w-full text-white shadow-md shadow-gray-500`}
-			style="height: {height}px;"
+			style="height: {height}px; background-size: cover; background-position: center;"
 		>
 			{#if loaded}
 				<div
