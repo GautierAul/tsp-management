@@ -4,6 +4,7 @@ export type Formule = {
 	description: string[];
 	format: string;
 	duration: string;
+	image?: string;
 };
 
 export const formulesList: Formule[] = [
