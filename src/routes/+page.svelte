@@ -4,6 +4,7 @@
 	import ProfilesList from './_components/Profiles/ProfilesList.svelte';
 	import Separator from './_components/Separator.svelte';
 	import { footerHeight, headerHeight, screenHeight } from '$lib/stores';
+	import Formules from './_components/Formules/Formules.svelte';
 
 	let title: string = 'Team Spirit & Perfomrance';
 
@@ -13,6 +14,14 @@
 	});
 
 	$: height = $screenHeight - ($headerHeight * 2 + $footerHeight);
+
+	// TODO Passage en actif lors du scroll
+	//     window.addEventListener("scroll", function() {
+	//   var elementTarget = document.getElementById("section-2");
+	//   if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
+	//       alert("You've scrolled past the second div");
+	//   }
+	// });
 </script>
 
 <svelte:head>
@@ -61,6 +70,8 @@
 				performances."
 			</span>
 		</div>
+		<Separator />
+		<Formules />
 	</div>
 {/if}
 
