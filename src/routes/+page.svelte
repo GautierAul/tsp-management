@@ -46,6 +46,7 @@
 				</div>
 			{/if}
 		</div>
+		<Separator />
 		<div class="flex flex-col md:w-2/3 w-full p-8 items-center gap-4 text-center">
 			<span class="text-2xl font-medium"
 				>Pourquoi les pompiers réussissent toujours face au feu ?</span
@@ -63,6 +64,7 @@
 		</div>
 		<Separator />
 		<ProfilesList />
+		<Separator />
 		<div class="bg-surface-500 w-full flex justify-center p-8">
 			<span class="italic w-2/3 text-center text-lg">
 				"Passionné par l’humain et la force du collectif; mon but et de faire grandir chacun et tous

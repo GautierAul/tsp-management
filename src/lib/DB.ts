@@ -10,18 +10,16 @@ export type Formule = {
 export const formulesList: Formule[] = [
 	{
 		title: "S'initier",
-		objective: 'Prendre du recul sur nos postures pourcréer l’engagement et faire face.',
+		objective: 'Prendre du recul pour faire réussir une équipe hétérogène dans un but commun.',
 		description: [
+			'LES CNT (Compétences Non Techniques) essentielles à la performance',
 			'Le cadre d’organisation VS l’Humain',
-			'Quelles CNT (Compétences Non Techniques) sont essentielles à la performance ?',
-			'La responsabilité et la posture du manager',
-			'Vos objectifs et le pilotage des moyens',
-			'La force de l’objectif commun',
-			'Être concret sur le sens',
-			'Les leviers de la confiance',
-			'Animer les défis en accompagnant les compétences/ressources',
-			'L’approche par les compétences pour l’apprentissage par l’erreur',
-			'Animer et entretenir les fiertés,'
+			'Quelles postures managériales pour un impact positif l’engagement de moyens',
+			'Le but fédérateur de l’engagement collectif',
+			'Matérialiser le sens pour la motivation',
+			'Le cadre de cohésion et d’appartenance des valeurs et la confiance',
+			'Stimuler les défis en accompagnant les compétences',
+			'Animer et entretenir les fiertés'
 		],
 		format: 'Conférence séminaire',
 		duration: '80 minutes'
