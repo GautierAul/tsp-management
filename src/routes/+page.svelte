@@ -79,6 +79,6 @@
 
 <style lang="postcss">
 	#home {
-		background-image: url('/firemen-team.png');
+		background-image: url('/photo_main.jpg');
 	}
 </style>

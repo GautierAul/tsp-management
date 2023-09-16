@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { headerHeight, smallScreen, selectedPage } from '$lib/stores';
+	import { headerHeight, smallScreen, selectedPage, showContact } from '$lib/stores';
 	import { BookOpenIcon, HomeIcon, LinkedinIcon } from 'svelte-feather-icons';
 
 	let activeClass = 'font-bold';
@@ -44,6 +44,13 @@
 			>
 				<!-- <LinkedinIcon /> -->
 				<span>Informations</span>
+			</button>
+			<button
+				class="flex flex-row items-center justify-center gap-2 py-2 transition-all"
+				on:click={() => ($showContact = true)}
+			>
+				<!-- <LinkedinIcon /> -->
+				<span>Contacts</span>
 			</button>
 		</div>
 	{/if}

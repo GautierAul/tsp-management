@@ -6,3 +6,5 @@ export let footerHeight = writable(0);
 export let screenHeight = writable(0);
 
 export let selectedPage = writable('home');
+
+export let showContact = writable(false);
