@@ -21,7 +21,7 @@
 		</div>
 	</div>
 	<WorkInProgress />
-	{#if $smallScreen}
+	<!-- {#if $smallScreen}
 		<Footer />
-	{/if}
+	{/if} -->
 </div>

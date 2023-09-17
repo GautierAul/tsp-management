@@ -6,8 +6,6 @@
 	import { footerHeight, headerHeight, screenHeight } from '$lib/stores';
 	import Formules from './_components/Formules/Formules.svelte';
 
-	let title: string = 'Team Spirit & Perfomrance';
-
 	let loaded: boolean = false;
 	onMount(() => {
 		loaded = true;
@@ -25,7 +23,7 @@
 </script>
 
 {#if $headerHeight > 0 && height}
-	<div class="flex flex-col items-center">
+	<div id="home" class="flex flex-col items-center">
 		<div
 			id="home"
 			class={`flex items-center justify-center w-full text-white shadow-md shadow-gray-500`}
@@ -33,7 +31,7 @@
 		>
 			{#if loaded}
 				<div
-					class={`flex flex-col gap-4 items-center justify-center bg-black bg-opacity-40 p-8 w-full text-center`}
+					class={`flex flex-col gap-4 items-center justify-center bg-black bg-opacity-40 p-8 w-full text-center mt-[100px]`}
 					transition:slide={{ delay: 250, duration: 1000 }}
 				>
 					<h1 class="text-4xl font-bold">Team Spirit & Performance</h1>
@@ -46,10 +44,7 @@
 		<!-- <Separator /> -->
 		<div class="flex flex-col md:w-2/3 w-full p-8 items-center gap-4 text-center">
 			<h2 class="text-2xl font-medium">Pourquoi les pompiers réussissent toujours face au feu ?</h2>
-			<span>
-				Conférences, formations et entrainements managériaux innovants à destination des dirigeants
-				Et des managers dans tous les domaines d’activité.
-			</span>
+
 			<span>
 				Dans l’environnement Sapeurs-Pompiers la capacité à s’adapter, le mental, la cohésion, et la
 				confiance sont les clés de la réussite. Cependant, du management au commandement lors de la

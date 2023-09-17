@@ -48,12 +48,17 @@
 			>
 				{formule.title}
 			</h3>
+			<!-- svelte-ignore a11y-click-events-have-key-events -->
+			<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
 			<img
-				src="/foracc.jpg"
+				src={formule.image}
 				alt="profil d'hervé"
 				class={`group-hover:scale-105 transition rounded-full ${index === 1 ? 'h-40' : 'h-32'} ${
 					index === 1 ? 'w-40' : 'w-32'
 				} border-4 ${borderColor}`}
+				on:click={() => {
+					showModal = true;
+				}}
 			/>
 		</div>
 		<span class="font-light">{formule.objective}</span>

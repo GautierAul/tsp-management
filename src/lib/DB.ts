@@ -4,7 +4,8 @@ export type Formule = {
 	description: string[];
 	format: string;
 	duration: string;
-	image?: string;
+	image: string;
+	imageAlt: string;
 };
 
 export const formulesList: Formule[] = [
@@ -22,7 +23,9 @@ export const formulesList: Formule[] = [
 			'Animer et entretenir les fiertés'
 		],
 		format: 'Conférence séminaire',
-		duration: '80 minutes'
+		duration: '80 minutes',
+		image: '/initier.png',
+		imageAlt: 'Hervé en conférence'
 	},
 	{
 		title: 'Approfondir',
@@ -38,7 +41,9 @@ export const formulesList: Formule[] = [
 			'Savoir communiquer avec assertivité (V.E.R.A). '
 		],
 		format: 'Formation groupe de 12 personnes maximum',
-		duration: '12 heures'
+		duration: '12 heures',
+		image: '/approfondir.jpg',
+		imageAlt: 'Des élèves en formation dans un cours de management'
 	},
 	{
 		title: "S'entrainer",
@@ -51,6 +56,8 @@ export const formulesList: Formule[] = [
 			'Annoncer un objectif/une décision etc…)'
 		],
 		format: 'Formation renforcée groupe de 6 personnes maximum (en plus du parcours approfondir)',
-		duration: '8 heures'
+		duration: '8 heures',
+		image: '/entrainer.jpg',
+		imageAlt: 'Hervé en train de se muscler en chemise'
 	}
 ];
