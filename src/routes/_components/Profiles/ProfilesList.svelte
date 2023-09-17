@@ -47,38 +47,38 @@
 </script>
 
 <div
-	class="flex flex-col w-full items-center justify-center gap-4 text-center bg-surface-200 p-4 h-2/4"
+	class="flex flex-col w-full items-center justify-center gap-4 text-center bg-surface-300 p-4 h-2/4"
 >
 	<div class="flex justify-between items-center w-full md:w-2/3 overflow-x-auto">
 		<button
 			class="flex flex-col items-center p-4 transition-colors-slow rounded
-	{selectedProfile === 0 ? 'bg-surface-600' : 'hover:bg-surface-500'}"
+	{selectedProfile === 0 ? 'bg-surface-600' : 'hover:bg-surface-600'}"
 			on:click={() => handleClick(0)}
 		>
 			<div class="h-32 w-32 rounded-full border-4 border-lightred-500">
 				<img src="/foracc.jpg" alt="profil d'hervé" class="rounded-full" />
 			</div>
-			<span class="text-lightred-500 font-medium">Formateur accompagnateur</span>
+			<h3 class="text-lightred-500 font-medium">Formateur accompagnateur</h3>
 		</button>
 		<button
 			class="flex flex-col items-center p-4 transition-colors-slow rounded
-			{selectedProfile === 1 ? 'bg-surface-600' : 'hover:bg-surface-500'}"
+			{selectedProfile === 1 ? 'bg-surface-600' : 'hover:bg-surface-600'}"
 			on:click={() => handleClick(1)}
 		>
 			<div class="h-32 w-32 rounded-full border-4 border-lightred-500">
 				<img src="/profil-herve.jpg" alt="profil d'hervé" class="rounded-full" />
 			</div>
-			<span class="text-lightred-500 font-medium">Directeur commercial</span>
+			<h3 class="text-lightred-500 font-medium">Directeur commercial</h3>
 		</button>
 		<button
 			class="flex flex-col items-center p-4 transition-colors-slow rounded
-			{selectedProfile === 2 ? 'bg-surface-600' : 'hover:bg-surface-500'}"
+			{selectedProfile === 2 ? 'bg-surface-600' : 'hover:bg-surface-600'}"
 			on:click={() => handleClick(2)}
 		>
 			<div class="h-32 w-32 rounded-full border-4 border-lightred-500">
 				<img src="/herve-pompier.png" alt="profil d'hervé" class="rounded-full" />
 			</div>
-			<span class="text-lightred-500 font-medium">Officier sapeurs-pompiers</span>
+			<h3 class="text-lightred-500 font-medium">Officier sapeurs-pompiers</h3>
 		</button>
 	</div>
 	<div id="profile-content-container" class="w-full md:w-2/3 relative text-darkred-500">
@@ -135,6 +135,6 @@
 	.transition-colors-slow {
 		transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-		transition-duration: 1000ms;
+		transition-duration: 500ms;
 	}
 </style>

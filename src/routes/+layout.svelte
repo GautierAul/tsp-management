@@ -15,7 +15,7 @@
 <div class="flex flex-col h-screen bg-white">
 	<Contacts />
 	<Header />
-	<div class="grow overflow-y-auto flex justify-center w-full bg-surface-500">
+	<div class="grow overflow-y-auto flex justify-center w-full bg-surface-600">
 		<div class="w-full">
 			<slot />
 		</div>

@@ -24,9 +24,6 @@
 	// });
 </script>
 
-<svelte:head>
-	<title>{title}</title>
-</svelte:head>
 {#if $headerHeight > 0 && height}
 	<div class="flex flex-col items-center">
 		<div
@@ -39,18 +36,16 @@
 					class={`flex flex-col gap-4 items-center justify-center bg-black bg-opacity-40 p-8 w-full text-center`}
 					transition:slide={{ delay: 250, duration: 1000 }}
 				>
-					<span class="text-4xl font-bold">Team Spirit & Performance</span>
-					<span class="text-2xl font-semibold">
-						Augmentez votre impact managerial pour vos performances collectives
-					</span>
+					<h1 class="text-4xl font-bold">Team Spirit & Performance</h1>
+					<h1 class="text-2xl font-semibold">
+						Augmentez votre impact managerial pour booster vos performances collectives
+					</h1>
 				</div>
 			{/if}
 		</div>
-		<Separator />
+		<!-- <Separator /> -->
 		<div class="flex flex-col md:w-2/3 w-full p-8 items-center gap-4 text-center">
-			<span class="text-2xl font-medium"
-				>Pourquoi les pompiers réussissent toujours face au feu ?</span
-			>
+			<h2 class="text-2xl font-medium">Pourquoi les pompiers réussissent toujours face au feu ?</h2>
 			<span>
 				Conférences, formations et entrainements managériaux innovants à destination des dirigeants
 				Et des managers dans tous les domaines d’activité.
@@ -65,12 +60,12 @@
 		<Separator />
 		<ProfilesList />
 		<Separator />
-		<div class="bg-surface-500 w-full flex justify-center p-8">
-			<span class="italic w-2/3 text-center text-lg">
+		<div class="bg-surface-600 w-full flex justify-center p-8">
+			<h3 class="italic w-2/3 text-center text-lg">
 				"Passionné par l’humain et la force du collectif; mon but et de faire grandir chacun et tous
 				en soutenant les relations humaines dans l’objectif d’atteindre de meilleurs niveaux de
 				performances."
-			</span>
+			</h3>
 		</div>
 		<Separator />
 		<Formules />

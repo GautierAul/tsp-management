@@ -34,8 +34,6 @@
 	};
 	const bgTextColor: string = getColors(index);
 	const borderColor: string = getBorderColors(index);
-
-	$: console.log(index, showModal);
 </script>
 
 {#if bgTextColor}
@@ -45,11 +43,11 @@
 		} ${borderColor} rounded gap-2`}
 	>
 		<div class="relative w-fit group">
-			<span
+			<h3
 				class={`absolute z-10 group-hover:scale-105 group-hover:-bottom-1 transition-all bottom-0 left-0 w-full ${bgTextColor} text-center px-2 py-1 rounded text-white`}
 			>
 				{formule.title}
-			</span>
+			</h3>
 			<img
 				src="/foracc.jpg"
 				alt="profil d'hervé"
