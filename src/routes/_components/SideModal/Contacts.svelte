@@ -4,7 +4,6 @@
 </script>
 
 {#if $showContact}
-	<!-- <div class="w-10/12 md:w-2/3 z-50 absolute top-0 left-0 h-full ">Les contacts</div> -->
 	<div
 		class="absolute top-0 left-0 flex flex-row z-50 w-full h-full bg-black bg-opacity-20 overflow-hidden"
 		transition:fade

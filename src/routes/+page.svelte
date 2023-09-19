@@ -31,7 +31,7 @@
 		>
 			{#if loaded}
 				<div
-					class={`flex flex-col gap-4 items-center justify-center bg-black bg-opacity-40 p-8 w-full text-center mt-[100px]`}
+					class={`flex flex-col gap-4 items-center justify-center bg-black bg-opacity-40 p-8 w-full text-center`}
 					transition:slide={{ delay: 250, duration: 1000 }}
 				>
 					<h1 class="text-4xl font-bold">Team Spirit & Performance</h1>
@@ -42,15 +42,19 @@
 			{/if}
 		</div>
 		<!-- <Separator /> -->
-		<div class="flex flex-col md:w-2/3 w-full p-8 items-center gap-4 text-center">
-			<h2 class="text-2xl font-medium">Pourquoi les pompiers réussissent toujours face au feu ?</h2>
+		<div class="w-full bg-surface-600 flex justify-center">
+			<div class="flex flex-col md:w-2/3 w-full p-8 items-center gap-4 text-center bg-surface-600">
+				<h2 class="text-2xl font-medium">
+					Pourquoi les pompiers réussissent toujours face au feu ?
+				</h2>
 
-			<span>
-				Dans l’environnement Sapeurs-Pompiers la capacité à s’adapter, le mental, la cohésion, et la
-				confiance sont les clés de la réussite. Cependant, du management au commandement lors de la
-				phase opération, le socle repose sur un ensemble maîtrisé de postures et de méthodes
-				managériales adaptées.
-			</span>
+				<span>
+					Dans l’environnement Sapeurs-Pompiers la capacité à s’adapter, le mental, la cohésion, et
+					la confiance sont les clés de la réussite. Cependant, du management au commandement lors
+					de la phase opération, le socle repose sur un ensemble maîtrisé de postures et de méthodes
+					managériales adaptées.
+				</span>
+			</div>
 		</div>
 		<Separator />
 		<ProfilesList />
