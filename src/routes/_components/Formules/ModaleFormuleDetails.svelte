@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Formule } from '$lib/DB';
+	import { CheckIcon } from 'svelte-feather-icons';
 	import Modal from '../Modal.svelte';
 
 	export let showModal: boolean; // boolean
@@ -15,12 +16,15 @@
 		{formule.title}
 	</h3>
 
-	<span class="font-bold">Contenu</span>
-	<ol>
-		{#each formule.description as detail}
-			<li>- {detail}</li>
-		{/each}
-	</ol>
-
 	<span><span class="font-bold">Format</span>: {formule.format}</span>
+	<div>
+		{#each formule.description as detail}
+			<div class="flex flex-row gap-2">
+				<div class="pt-1">
+					<CheckIcon size="20" />
+				</div>
+				<span> {detail}</span>
+			</div>
+		{/each}
+	</div>
 </Modal>

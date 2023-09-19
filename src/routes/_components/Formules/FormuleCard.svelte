@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Formule } from '$lib/DB';
+	import { ArrowRightCircleIcon, ChevronDownIcon, ChevronUpIcon } from 'svelte-feather-icons';
 	import ModaleFormuleDetails from './ModaleFormuleDetails.svelte';
 
 	export let formule: Formule;
@@ -38,9 +39,9 @@
 
 {#if bgTextColor}
 	<div
-		class={`flex flex-col items-center p-8 bg-surface-200 w-full ${
+		class={`flex flex-col items-center justify-between p-8 w-full ${
 			index === 1 ? 'border-2' : 'border'
-		} ${borderColor} rounded gap-2`}
+		} ${borderColor} ${index === 1 ? 'bg-surface-400 ' : 'bg-surface-200 '} rounded gap-2`}
 	>
 		<div class="relative w-fit group">
 			<h3
@@ -48,6 +49,7 @@
 			>
 				{formule.title}
 			</h3>
+
 			<!-- svelte-ignore a11y-click-events-have-key-events -->
 			<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
 			<img
@@ -61,14 +63,22 @@
 				}}
 			/>
 		</div>
-		<span class="font-light">{formule.objective}</span>
-		<span class="">Durée : {formule.duration}</span>
-		<button
-			class="underline cursor-pointer"
-			on:click={() => {
-				showModal = true;
-			}}>Plus d'information</button
-		>
+		<div class="flex flex-col gap-2">
+			<span class="font-medium">{formule.objective}</span>
+			<span>Durée : {formule.duration}</span>
+			<span>Format: {formule.format}</span>
+		</div>
+		<div class="flex justify-center">
+			<button
+				class="cursor-pointer flex items-center justify-center gap-2 rounded-lg w-fit px-4 py-2 bg-surface-600 font-medium border border-surface-700"
+				on:click={() => {
+					showModal = !showModal;
+				}}
+			>
+				<span> Plus d'information </span>
+				<ArrowRightCircleIcon />
+			</button>
+		</div>
 	</div>
 {/if}
 
