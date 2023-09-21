@@ -45,7 +45,7 @@
 	>
 		<div class="relative w-fit group">
 			<h3
-				class={`absolute z-10 group-hover:scale-105 group-hover:-bottom-1 transition-all bottom-0 left-0 w-full ${bgTextColor} text-center px-2 py-1 rounded text-white`}
+				class={`absolute group-hover:scale-105 group-hover:-bottom-1 transition-all bottom-0 left-0 w-full ${bgTextColor} text-center px-2 py-1 rounded text-white`}
 			>
 				{formule.title}
 			</h3>
