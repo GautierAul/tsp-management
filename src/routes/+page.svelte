@@ -29,6 +29,7 @@
 				<h1 class="text-2xl font-semibold">
 					Augmentez votre impact managerial pour booster vos performances collectives
 				</h1>
+				<a href="/FLYER_TSP.pdf" class="underline text-lg" download>Télécharger mon flyer</a>
 			</div>
 		{/if}
 	</div>

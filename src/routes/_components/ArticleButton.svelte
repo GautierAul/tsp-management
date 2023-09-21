@@ -9,17 +9,17 @@
 	let show: boolean = false;
 </script>
 
-<div class="flex flex-col gap-2 w-full py-4">
+<div class="flex flex-col gap-2 w-full">
 	<span class="text-lg text-left">
 		{description}
 	</span>
 	<button
-		class="py-2 px-4 flex items-center justify-between border-2 border-darkred-500 rounded-lg"
+		class="py-2 px-4 flex items-center justify-between border-2 border-darkred-500 rounded-lg bg-surface-400"
 		on:mouseenter={() => (show = true)}
 		on:mouseleave={() => (show = false)}
 	>
 		<div
-			class={` transition-colors duration-500 flex items-center ${
+			class={`transition-colors duration-500 flex items-center ${
 				show ? 'text-redorange-600' : 'text-amber-950'
 			}`}
 		>
