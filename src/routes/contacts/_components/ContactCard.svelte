@@ -2,6 +2,7 @@
 	export let title: string;
 	export let description: string;
 	export let contactValue: string;
+	export let link: string = '';
 </script>
 
 <div
@@ -16,6 +17,12 @@
 		<span class="">{description}</span>
 	</div>
 	<div>
-		<span class="font-semibold underline">{contactValue}</span>
+		{#if link}
+			<a class="font-semibold underline break-words" href={link} target="_blank"
+				>{@html contactValue}</a
+			>
+		{:else}
+			<span class="font-semibold underline break-words">{@html contactValue}</span>
+		{/if}
 	</div>
 </div>

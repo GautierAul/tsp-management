@@ -20,8 +20,8 @@
 			link: '/'
 		},
 		{
-			title: 'Formules',
-			link: '/formules'
+			title: 'Offres',
+			link: '/offres'
 		},
 		{
 			title: 'A propos de moi',
@@ -56,7 +56,7 @@
 	<div
 		class="flex gap-2 items-center justify-between md:justify-center text-lg font-semibold py-2 px-4 md:py-0 w-full md:w-fit"
 	>
-		<div class="flex gap-2 items-center w-full">
+		<button class="flex gap-2 items-center w-full" on:click={() => goto('/')}>
 			<img src="/logo-cut.png" alt="Logo" class="h-20 w-20 aspect-square" />
 			<span
 				>Team Spirit
@@ -65,7 +65,7 @@
 				{/if}
 				& Performance</span
 			>
-		</div>
+		</button>
 		<!-- {#if $smallScreen}
 			<button
 				class="bg-darkred-500 px-4 py-2 rounded-full text-white w-fit text-center h-fit"

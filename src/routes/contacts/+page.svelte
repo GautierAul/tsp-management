@@ -14,7 +14,8 @@
 		<ContactCard
 			title="Par email"
 			description="Pour une conversation formelle."
-			contactValue="herve.aulner@laposte.fr"
+			contactValue="tsp.management.france</br>@gmail.com"
+			link="mailto:tsp.management.france@gmail.com"
 		>
 			<MailIcon />
 		</ContactCard>
@@ -22,6 +23,7 @@
 			title="LinkedIn"
 			description="Suivez mes dernières actualités."
 			contactValue="Hervé Aulner"
+			link="https://www.linkedin.com/in/hervé-aulner-47bb4946/"
 		>
 			<LinkedinIcon />
 		</ContactCard>
