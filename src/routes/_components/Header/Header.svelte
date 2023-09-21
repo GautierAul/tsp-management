@@ -50,13 +50,21 @@
 </script>
 
 <header
-	class="text-lg h-auto p-0 md:p-4 bg-header shadow-md flex flex-col md:flex-row items-center md:justify-between justify-around md:px-8 px-0 bg-transparent text-amber-950 z-10"
+	class="text-lg h-auto p-0 md:p-4 bg-header shadow-md flex flex-col md:flex-row items-center md:justify-between justify-between md:px-8 px-0 bg-transparent text-amber-950 z-10"
 	bind:clientHeight={$headerHeight}
 >
-	<div class="flex gap-2 items-center justify-center text-lg font-semibold py-2 md:py-0">
-		<div class="flex gap-2 items-center justify-center">
+	<div
+		class="flex gap-2 items-center justify-between md:justify-center text-lg font-semibold py-2 px-4 md:py-0 w-full md:w-fit"
+	>
+		<div class="flex gap-2 items-center w-full">
 			<img src="/logo-cut.png" alt="Logo" class="h-20 w-20 aspect-square" />
-			<span>Team Spirit & Performance</span>
+			<span
+				>Team Spirit
+				{#if $smallScreen}
+					<br />
+				{/if}
+				& Performance</span
+			>
 		</div>
 		<!-- {#if $smallScreen}
 			<button
@@ -68,7 +76,7 @@
 		{/if} -->
 		{#if $smallScreen}
 			<button
-				class="text-2xl"
+				class="text-2xl p-2 border border-surface-700 rounded-lg"
 				on:click={() => {
 					openHeader = !openHeader;
 				}}

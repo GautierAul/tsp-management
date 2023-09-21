@@ -19,7 +19,7 @@
 	const containedLinks = item.items?.map((item) => item.link);
 </script>
 
-<div class="flex flex-col w-full">
+<div class="flex flex-col">
 	{#if item.items}
 		<button
 			class={`flex flex-row items-center justify-center gap-2 p-2 transition-colors duration-300 rounded-t-lg hover:bg-surface-600 
