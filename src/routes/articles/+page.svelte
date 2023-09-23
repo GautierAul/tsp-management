@@ -14,7 +14,7 @@
 <div class="flex flex-col items-center justify-center gap-10 bg-surface-200 h-fit">
 	<div class="w-full md:w-2/3 flex flex-col items-center justify-center gap-10 p-4">
 		<h1 class="text-xl font-bold text-center">
-			Mes façons de penser par les articles crées par moi-même pour vous.
+			Mes articles portant sur le management et la gestion d'équipe.
 		</h1>
 		<span class="text-justify font-medium"
 			>Au fil du temps, j'ai rédigé une série d'articles pertinents sur le management, couvrant des
