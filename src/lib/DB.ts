@@ -15,6 +15,13 @@ export type Article = {
 	year: number;
 };
 
+export type Review = {
+	name: string;
+	company: string;
+	content: string;
+	poste?: string;
+};
+
 export const formulesList: Formule[] = [
 	{
 		title: "S'initier",
@@ -201,5 +208,58 @@ export const articlesList: Article[] = [
 		title: 'Comment réussir l’entretien annuel d’évaluation (cadre-dirigeant-magazine.com)',
 		link: 'https://www.cadre-dirigeant-magazine.com/manager/comment-reussir-lentretien-annuel-devaluation/',
 		year: 2014
+	}
+];
+
+export const reviewList: Review[] = [
+	{
+		name: 'Yves Morby',
+		company: "Groupe L'Express",
+		content:
+			"J'ai eu la chance de participer à une conférence de Hervé Aulner au sujet de l'expérience client dans le cadre de mon Master 2 en qualité et innovation.Hervé Aulner a présenté le sujet d'une manière à captiver mon attention dès les premiers instants.La conférence était riche en contenu avec un nombre important d'éléments directement transposables dans ma pratique professionnelle.armi les nombreux intervenants que j'ai rencontrés lors du Master, Hervé Aulner a été le conférencier qui m'a le plus marqué tant pour la qualité de son exposé que pour les nombreux échanges très agréables et enrichissants lors de sa présentation.Je suis très content d'avoir rencontré Hervé Aulner et je recommanderai ses conférences à tout un chacun, sans hésitation.",
+		poste: 'Directeur'
+	},
+	{
+		name: 'Holger BRACKER',
+		company: 'Groupe ZITHA',
+		content:
+			'Hervé Aulner, un vrai pro et passionné dans le contexte de ses fonctions au groupe POST et en tant qu’officier chef des sapeurs-pompiers, arrive facilement à vous captiver quant à la promotion de l’engagement en entreprise. Sa façon de générer le team spirit et la performance est basée sur 7 leviers permettant d’impacter de manière positive et importante la motivation de l’individu. Avec sa personnalité emphatique et charismatique, Hervé Aulner enflamme l’inspiration de son entourage de vouloir marcher dans ses traces. Je garde en bon souvenir une rencontre enrichissante et d’une plus-value extraordinaire',
+		poste: 'Secrétaire Général, Coordinateur Qualité et Responsable RSE'
+	},
+	{
+		name: 'Anny BUBOIS',
+		company: 'Garderie préscolaire des petits pieds Québec',
+		content:
+			'Une rencontre marquante lors de ma visite dans le cadre de l’école d’été MBA-UQTR 2023. Des valeurs professionnelles partagées, un océan sépare nos réalités, mais une vision commune nous unis. Merci Hervé AULNER de comprendre les gens et de bien vulgariser ce qui est essentiel à la réussite en gestion. Une belle conférence, de loin l’une des meilleurs à mon avis',
+		poste: 'Directrice Générale'
+	},
+	{
+		name: 'Siham VICINI',
+		company: 'Total Energies Proxi Nord',
+		content:
+			"Hervé incarne la passion du management de l'humain conjuguée à la performance commerciale. Sa dévotion envers ces sphères est une véritable source d'inspiration pour moi.  Son énergie contagieuse et sa capacité à inspirer la cohésion de groupe sont tout simplement remarquables",
+		poste: 'Chef de marché gaz et Électricité'
+	},
+	{
+		name: 'David DORKEL',
+		company: 'Croix Rouge Luxembourgeoise',
+		content:
+			'Introduction accrocheuse, scénario passionnant et une conclusion inspirante. La rémanence de son intervention se fait encore sentir dans mon management au quotidien. Hervé est une personne qui « fait grandir',
+		poste: 'Responsable département prélèvement'
+	},
+
+	{
+		name: 'Bruno Trompette',
+		company: 'Sapeurs-Pompiers de la Moselle',
+		content:
+			'Une belle découverte, Hervé sait transmettre son expérience et sa compréhension de l’humain. Sa maitrise du sujet est palpable et lui permet une vulgarisation technique dans des échanges décomplexés.',
+		poste: 'Chef d’une Unité Opérationnelle'
+	},
+	{
+		name: 'Julie Bélisle-Gauthier',
+		company: 'Investissement Québec',
+		content:
+			'Hervé nous présente sa vision de la gestion empreinte de bienveillance, et nous inspire à devenir de meilleurs leaders en des mots simples, clairs et qui touchent au cœur. Merci pour ce beau moment !',
+		poste: 'Directrice de comptes principales'
 	}
 ];
