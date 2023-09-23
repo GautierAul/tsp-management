@@ -37,7 +37,7 @@
 				<ChevronDownIcon />
 			{/if}
 		</button>
-		<div class="relative w-full h-full">
+		<div class="relative w-full h-full z-50">
 			{#if show}
 				<div
 					class="absolute -top-full right-0 shadow-lg shadow-gray-800 w-[250px] flex flex-col gap-2 bg-surface-400 rounded-b rounded-l p-2 border-2 border-surface-700"

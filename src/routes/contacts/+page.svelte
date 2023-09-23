@@ -13,7 +13,6 @@
 	<div class="flex flex-col md:flex-row gap-4">
 		<ContactCard
 			title="Par email"
-			description="Pour une conversation formelle."
 			contactValue="tsp.management.france</br>@gmail.com"
 			link="mailto:tsp.management.france@gmail.com"
 		>
@@ -21,17 +20,12 @@
 		</ContactCard>
 		<ContactCard
 			title="LinkedIn"
-			description="Suivez mes dernières actualités."
 			contactValue="Hervé Aulner"
 			link="https://www.linkedin.com/in/hervé-aulner-47bb4946/"
 		>
 			<LinkedinIcon />
 		</ContactCard>
-		<ContactCard
-			title="Appel téléphonique"
-			description="Intéressé par mon profil ? Contactez-moi !"
-			contactValue="06 07 03 78 87"
-		>
+		<ContactCard title="Appel téléphonique" contactValue="06 07 03 78 87">
 			<PhoneCallIcon />
 		</ContactCard>
 	</div>

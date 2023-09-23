@@ -58,6 +58,8 @@
 	</div>
 	<Separator />
 </div>
+<!-- Used for serving image for og:image meta tag -->
+<a href="/logo-cut.png" download />
 
 <style lang="postcss">
 	#home {

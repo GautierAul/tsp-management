@@ -16,6 +16,11 @@
 		<h1 class="text-xl font-bold text-center">
 			Mes façons de penser par les articles crées par moi-même pour vous.
 		</h1>
+		<span class="text-justify font-medium"
+			>Au fil du temps, j'ai rédigé une série d'articles pertinents sur le management, couvrant des
+			sujets variés tels que la gestion d'équipe, le leadership efficace, la résolution de conflits
+			et la productivité au travail, afin de vous aider à perfectionner vos compétences en gestion.</span
+		>
 		<div class="flex flex-col gap-6">
 			{#each Object.keys(articlesByYear).reverse() as year}
 				<div>

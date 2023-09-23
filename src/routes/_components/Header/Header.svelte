@@ -31,7 +31,7 @@
 					link: '/contacts'
 				},
 				{
-					title: 'Mes coups de cours',
+					title: 'Mes coups de cœurs',
 					link: '/coupdecoeurs'
 				},
 				{
