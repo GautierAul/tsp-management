@@ -214,7 +214,7 @@ export const articlesList: Article[] = [
 export const reviewList: Review[] = [
 	{
 		name: 'Yves Morby',
-		company: "Groupe L'Express",
+		company: 'CIPA Haaptmann’s Schlass',
 		content:
 			"J'ai eu la chance de participer à une conférence de Hervé Aulner au sujet de l'expérience client dans le cadre de mon Master 2 en qualité et innovation.Hervé Aulner a présenté le sujet d'une manière à captiver mon attention dès les premiers instants.La conférence était riche en contenu avec un nombre important d'éléments directement transposables dans ma pratique professionnelle.armi les nombreux intervenants que j'ai rencontrés lors du Master, Hervé Aulner a été le conférencier qui m'a le plus marqué tant pour la qualité de son exposé que pour les nombreux échanges très agréables et enrichissants lors de sa présentation.Je suis très content d'avoir rencontré Hervé Aulner et je recommanderai ses conférences à tout un chacun, sans hésitation.",
 		poste: 'Directeur'

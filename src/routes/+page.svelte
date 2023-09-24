@@ -25,7 +25,7 @@
 				class={`flex flex-col gap-4 items-center justify-center bg-black bg-opacity-40 p-8 w-full text-center`}
 				transition:slide={{ delay: 250, duration: 1000 }}
 			>
-				<h1 class="text-4xl font-bold">Team Spirit & Performance</h1>
+				<h1 class="text-4xl font-bold">Hervé Aulner - Team Spirit & Performance</h1>
 				<h1 class="text-2xl font-semibold">
 					Augmentez votre impact managerial pour booster vos performances collectives
 				</h1>

@@ -24,7 +24,7 @@
 			link: '/offres'
 		},
 		{
-			title: 'A propos de moi',
+			title: "Plus d'infos",
 			items: [
 				{
 					title: 'Contacts',
@@ -66,14 +66,7 @@
 				& Performance</span
 			>
 		</button>
-		<!-- {#if $smallScreen}
-			<button
-				class="bg-darkred-500 px-4 py-2 rounded-full text-white w-fit text-center h-fit"
-				on:click={() => ($showContact = false)}
-			>
-				&#8964;
-			</button>
-		{/if} -->
+
 		{#if $smallScreen}
 			<button
 				class="text-2xl p-2 border border-surface-700 rounded-lg"
@@ -89,11 +82,11 @@
 			</button>
 		{/if}
 	</div>
-	{#if $smallScreen}
-		<div class="bg-black h-[1px] w-full" />
-	{/if}
 
 	{#if !$smallScreen || openHeader}
+		{#if $smallScreen}
+			<div transition:fade class="bg-gray-400 h-[1px] w-full" />
+		{/if}
 		<div
 			class="flex flex-row justify-between items-center gap-4 text-darkred-500 p-2 md:py-0 w-full md:w-fit"
 			transition:slide
