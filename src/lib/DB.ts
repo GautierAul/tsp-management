@@ -19,7 +19,7 @@ export type Review = {
 	name: string;
 	company: string;
 	content: string;
-	poste?: string;
+	poste: string;
 };
 
 export const formulesList: Formule[] = [
@@ -44,7 +44,7 @@ export const formulesList: Formule[] = [
 	{
 		title: 'Approfondir',
 		objective:
-			'Travailler sur les postures, méthodes et outils pour repartir avec ses actions concrètes.',
+			'Favoriser la mise en pratique grâce à la maîtrise des postures, méthodes et outils.',
 		description: [
 			'Prendre conscience de notre responsabilité sur l’engagement et la motivation par la posture du « chef », la compréhension des « autres » et les interactions pour construire un cadre relationnel de fonctionnement (Cadre de Relation et D.I.S.C)',
 			'Comprendre pour mieux agir, comprendre « les leviers » de motivation et travailler sur les actions possibles, les contraintes et les enjeux (quelques approches sociologiques essentielles)',

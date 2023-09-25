@@ -18,10 +18,12 @@
 			<div class="h-4 w-11 bg-lightred-500 -rotate-45 origin-top-left" />
 		</div> -->
 	</div>
-	<button
-		class="py-2 px-4 flex items-center justify-between border-2 border-darkred-500 rounded-lg bg-surface-400"
+	<a
+		class="py-2 px-4 flex items-center justify-between border-2 border-darkred-500 rounded-lg bg-surface-400 ml-2 font-semibold text-lg"
 		on:mouseenter={() => (show = true)}
 		on:mouseleave={() => (show = false)}
+		target="_blank"
+		href={link}
 	>
 		<div
 			class={` transition-colors duration-500 flex items-center ${
@@ -33,14 +35,14 @@
 					<ArrowRightIcon />
 				</div>
 			{/if}
-			<a href={link} class="ml-2 font-semibold text-lg" target="_blank">
-				{title}
-			</a>
+			<!-- <a class="ml-2 font-semibold text-lg"> -->
+			{title}
+			<!-- </a> -->
 		</div>
 		{#if !show}
 			<div transition:slide={{ delay: 250, duration: 300, axis: 'x' }}>
 				<ArrowRightIcon />
 			</div>
 		{/if}
-	</button>
+	</a>
 </div>

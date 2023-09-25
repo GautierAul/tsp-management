@@ -1,6 +1,7 @@
 <script>
 	import { reviewList } from '$lib/DB';
 	import PcReviewList from './_components/PC/PCReviewList.svelte';
+	import ReviewCaroussel from './_components/ReviewCaroussel/ReviewCaroussel.svelte';
 </script>
 
 <div
@@ -18,5 +19,6 @@
 			aussi pour moi le seul KPI qui compte.
 		</h2>
 		<PcReviewList />
+		<!-- <ReviewCaroussel /> -->
 	</div>
 </div>
