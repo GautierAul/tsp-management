@@ -32,7 +32,7 @@
 			<slot />
 		</div>
 	</div>
-	<WorkInProgress />
+	<!-- <WorkInProgress /> -->
 	<!-- {#if $smallScreen}
 		<Footer />
 	{/if} -->

@@ -78,6 +78,17 @@ export const formulesList: Formule[] = [
 
 export const articlesList: Article[] = [
 	{
+		title:
+			"5 leviers pour une gouvernance adaptative inspirée par l'environnement des Sapeurs-Pompiers (actionco.fr)",
+		link: 'https://www.actionco.fr/Thematique/management-1214/Breves/leviers-gouvernance-adaptative-inspiree-environnement-386943.htm',
+		year: 2023
+	},
+	{
+		title: 'Le management au féminin existe-t-il ? (actionco.fr)',
+		link: 'https://www.actionco.fr/Thematique/management-1214/Breves/Le-management-au-feminin-existe-t-il--386194.htm',
+		year: 2023
+	},
+	{
 		title: '[Tribune] Les 6 socles pour engager vraiment nos équipes - Management - Actionco.fr',
 		link: 'https://www.actionco.fr/Thematique/management-1214/Breves/-Tribune-Les-6-socles-pour-engager-vraiment-nos-equipes-372117.htm',
 		year: 2022
