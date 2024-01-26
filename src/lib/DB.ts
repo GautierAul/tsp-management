@@ -224,6 +224,20 @@ export const articlesList: Article[] = [
 
 export const reviewList: Review[] = [
 	{
+		name: 'Julie Misère',
+		company: 'CHU Sainte Justine',
+		content:
+			"La conférence Team Spirit & Performance a été une expérience extraordinaire qui m'a profondément inspiré. Hervé Aulner a su captiver mon attention et transmettre des enseignements précieux, renforçant ainsi ma conviction en l'importance de l'esprit d'équipe pour atteindre l'excellence.",
+		poste: 'Coordinatrice de recherche'
+	},
+	{
+		name: 'Stéphanie C',
+		company: 'Entreprise de conseils Paris',
+		content:
+			"Un grand merci pour tout ce que tu nous as apporté au cours de ces 2 jours passés ensemble. Nous avions besoin d'être secoués, challengés, d'apprendre des techniques concrètes, c'était parfait ! Je crois que chacun a beaucoup appris et s'est remis en question.		",
+		poste: 'Directrice RH Admin et Finances'
+	},
+	{
 		name: 'Yves Morby',
 		company: 'CIPA Haaptmann’s Schlass',
 		content:

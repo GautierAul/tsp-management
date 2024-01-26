@@ -41,6 +41,10 @@
 				{
 					title: 'Témoignages',
 					link: '/temoignages'
+				},
+				{
+					title: 'Mentions légales',
+					link: '/mentions-legales'
 				}
 			]
 		}
@@ -52,6 +56,7 @@
 <header
 	class="text-lg h-auto p-0 md:p-4 bg-header shadow-md flex flex-col md:flex-row items-center md:justify-between justify-between md:px-8 px-0 bg-transparent text-amber-950 z-10"
 	bind:clientHeight={$headerHeight}
+	transition:slide
 >
 	<div
 		class="flex gap-2 items-center justify-between md:justify-center text-lg font-semibold py-2 px-4 md:py-0 w-full md:w-fit"

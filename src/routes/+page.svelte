@@ -3,33 +3,58 @@
 	import { fade, slide } from 'svelte/transition';
 	import ProfilesList from './_components/Profiles/ProfilesList.svelte';
 	import Separator from './_components/Separator.svelte';
-	import { footerHeight, headerHeight, screenHeight } from '$lib/stores';
-	import Formules from './_components/Formules/Formules.svelte';
+	import { footerHeight, headerHeight, hideScreen, screenHeight } from '$lib/stores';
+	import Button from './_components/Button.svelte';
 
 	let loaded: boolean = false;
+
 	onMount(() => {
 		loaded = true;
 	});
 
-	$: height = $screenHeight - ($headerHeight * 2 + $footerHeight);
+	$: maxHeight = $screenHeight - ($headerHeight * 2 + $footerHeight);
+
+	let isReduced = false;
+	function reduceSize() {
+		isReduced = true;
+	}
+
+	$: if (!$hideScreen) {
+		isReduced = true;
+	}
 </script>
 
 <div id="home" class="flex flex-col items-center" transition:fade>
 	<div
 		id="home"
-		class={`flex items-center justify-center w-full text-white shadow-md shadow-gray-500`}
-		style="height: {height}px; background-size: cover; background-position: center;"
+		class={`flex items-center justify-center w-full text-white shadow-md shadow-gray-500 h-screen transition-all duration-500`}
+		class:reduced={isReduced && loaded}
+		style={`background-size: cover; background-position: center; --max-height: ${maxHeight}px;`}
 	>
 		{#if loaded}
 			<div
 				class={`flex flex-col gap-4 items-center justify-center bg-black bg-opacity-40 p-8 w-full text-center`}
-				transition:slide={{ delay: 250, duration: 1000 }}
 			>
 				<h1 class="text-4xl font-bold">Hervé Aulner - Team Spirit & Performance</h1>
 				<h1 class="text-2xl font-semibold">
 					Augmentez votre impact managerial pour booster vos performances collectives
 				</h1>
-				<a href="/FLYER_TSP.pdf" class="underline text-lg" download>Télécharger mon flyer</a>
+				<div class="flex flex-col gap-2 items-center">
+					{#if $hideScreen}
+						<button
+							class="bg-gradient-to-tr from-darkred-500 to-darkred-400 text-white px-4 py-2 rounded-full font-semibold bg-pan-tl"
+							on:click={() => {
+								reduceSize();
+								$hideScreen = false;
+							}}
+						>
+							Découvrir
+						</button>
+					{/if}
+					<Button>
+						<a href="/FLYER_TSP.pdf" download>Télécharger mon flyer</a>
+					</Button>
+				</div>
 			</div>
 		{/if}
 	</div>
@@ -57,6 +82,7 @@
 		</h3>
 	</div>
 	<Separator />
+	<div class="bg-surface-500 w-full flex justify-center p-8" />
 </div>
 <!-- Used for serving image for og:image meta tag -->
 <a href="/logo-cut.png" download />
@@ -64,5 +90,35 @@
 <style lang="postcss">
 	#home {
 		background-image: url('/photo_main.jpg');
+	}
+
+	.reduced {
+		transition: height 0.5s ease-in-out;
+		height: var(--max-height);
+	}
+
+	.bg-pan-tl {
+		-webkit-animation: bg-pan-tl 2s ease-in-out infinite alternate both;
+		animation: bg-pan-tl 3s ease-in-out infinite alternate both;
+		background: linear-gradient(-45deg, #9e2a2b, #335c67);
+		background-size: 400% 400%;
+		/* animation: gradient 15s ease infinite; */
+	}
+
+	@-webkit-keyframes bg-pan-tl {
+		0% {
+			background-position: 100% 100%;
+		}
+		100% {
+			background-position: 0 0;
+		}
+	}
+	@keyframes bg-pan-tl {
+		0% {
+			background-position: 100% 100%;
+		}
+		100% {
+			background-position: 0 0;
+		}
 	}
 </style>
