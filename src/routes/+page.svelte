@@ -27,36 +27,61 @@
 <div id="home" class="flex flex-col items-center" transition:fade>
 	<div
 		id="home"
-		class={`flex items-center justify-center w-full text-white shadow-md shadow-gray-500 h-screen transition-all duration-500`}
+		class={`flex flex-col items-center justify-center w-full text-white shadow-md shadow-gray-500 h-screen transition-all duration-500`}
 		class:reduced={isReduced && loaded}
-		style={`background-size: cover; background-position: center; --max-height: ${maxHeight}px;`}
+		style={`--max-height: ${maxHeight}px; background-image: url('/photo_main.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;`}
 	>
-		{#if loaded}
-			<div
-				class={`flex flex-col gap-4 items-center justify-center bg-black bg-opacity-40 p-8 w-full text-center`}
-			>
-				<h1 class="text-4xl font-bold">Hervé Aulner - Team Spirit & Performance</h1>
+		<!-- class={`flex flex-col gap-4 items-center justify-center bg-black bg-opacity-40 p-8 w-full text-center`} -->
+		<!-- {#if loaded} -->
+		<!-- <h1 class="text-4xl font-bold">Hervé Aulner - Team Spirit & Performance</h1>
 				<h1 class="text-2xl font-semibold">
 					Augmentez votre impact managerial pour booster vos performances collectives
-				</h1>
-				<div class="flex flex-col gap-2 items-center">
-					{#if $hideScreen}
-						<button
-							class="bg-gradient-to-tr from-darkred-500 to-darkred-400 text-white px-4 py-2 rounded-full font-semibold bg-pan-tl"
-							on:click={() => {
-								reduceSize();
-								$hideScreen = false;
-							}}
-						>
-							Découvrir
-						</button>
-					{/if}
-					<Button>
-						<a href="/FLYER_TSP.pdf" download>Télécharger mon flyer</a>
-					</Button>
-				</div>
+				</h1> -->
+
+		<div
+			class="flex flex-col items-center justify-center text-center w-full grow font-semibold bg-black bg-opacity-50"
+		>
+			<h1 class="text-2xl font-bold text-gradient">2 enjeux majeurs</h1>
+			<h2 class="text-lg underline">Agilité et engagement collaborateurs</h2>
+			<h2 class="mt-4">
+				Augmentez votre impact managérial pour booster vos performances collectives
+			</h2>
+		</div>
+		<div class="relative p-2 grow w-full bg-black bg-opacity-50">
+			<img
+				src="/herve-dir.png"
+				alt="Logo"
+				class="h-56 md:h-60 aspect-auto absolute -top-10 md:-top-5 left-1 md:left-1/4 bg-gradient-to-tr from-[#53a3d4] from-10% to-darkred-400/70 rounded-full"
+			/>
+			<img
+				src="/herve-dessin-pompier.png"
+				alt="Logo"
+				class="h-52 md:h-60 aspect-auto absolute -bottom-10 md:-bottom-5 right-1 md:right-1/4 bg-gradient-to-tl from-darkred-400 from-50% to-[#53a3d4]/70 rounded-full"
+			/>
+			<div class="flex flex-col gap-2 items-center justify-center w-full h-full p-4 rounded-3xl">
+				{#if $hideScreen}
+					<button
+						class="bg-gradient-to-tr from-darkred-500 to-darkred-400 text-white px-4 py-2 rounded-full font-semibold bg-pan-tl"
+						on:click={() => {
+							reduceSize();
+							$hideScreen = false;
+						}}
+					>
+						Accéder au site
+					</button>
+				{/if}
+				<Button>
+					<a href="/FLYER_TSP.pdf" download>Télécharger mon flyer</a>
+				</Button>
 			</div>
-		{/if}
+		</div>
+		<div class="flex flex-col items-center justify-center w-full grow bg-black bg-opacity-50 p-4">
+			<h1 class="text-xl text-center">
+				La double expérience de Directeur Commercial et officer Sapeur-Pompier au service du
+				management
+			</h1>
+		</div>
+		<!-- {/if} -->
 	</div>
 	<!-- <Separator /> -->
 	<div class="w-full bg-surface-600 flex justify-center">
@@ -88,8 +113,21 @@
 <a href="/logo-cut.png" download />
 
 <style lang="postcss">
-	#home {
-		background-image: url('/photo_main.jpg');
+	.bg-image {
+		background-image: url('/pompier-dessins.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.text-gradient {
+		background: #53a3d4;
+		background: linear-gradient(to right, #53a3d4 21%, #9b0101 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-align: center;
+		animation: bg-pan-tl 10s ease-in-out infinite alternate both;
+		background-size: 400% 400%;
 	}
 
 	.reduced {
@@ -100,7 +138,7 @@
 	.bg-pan-tl {
 		-webkit-animation: bg-pan-tl 2s ease-in-out infinite alternate both;
 		animation: bg-pan-tl 3s ease-in-out infinite alternate both;
-		background: linear-gradient(-45deg, #9e2a2b, #335c67);
+		background: linear-gradient(-45deg, #9e2a2b, #53a3d4);
 		background-size: 400% 400%;
 		/* animation: gradient 15s ease infinite; */
 	}
