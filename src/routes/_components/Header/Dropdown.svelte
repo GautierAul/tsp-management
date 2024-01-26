@@ -45,7 +45,7 @@
 				>
 					{#each item.items as headerItem}
 						<button
-							class={`flex flex-row items-center justify-center gap-2 p-2 transition-all hover:bg-surface-600 ${
+							class={`flex flex-row items-center justify-center gap-2 p-2 transition-all duration-300 hover:bg-surface-600 rounded-xl ${
 								$page.url.pathname === headerItem.link ? activeClass : ''
 							}`}
 							on:click={() => {

@@ -40,9 +40,9 @@
 		<Header />
 	{/if}
 	<div
-		class="grow {$hideScreen
-			? 'overflow-y-hidden'
-			: 'overflow-y-auto'} flex justify-center w-full bg-surface-600"
+		class="grow {$hideScreen ? 'overflow-y-hidden' : 'overflow-y-auto'} 
+			{!loaded ? 'overflow-y-hidden' : ''}
+			flex justify-center w-full bg-surface-600"
 	>
 		<div class="w-full">
 			<slot />
