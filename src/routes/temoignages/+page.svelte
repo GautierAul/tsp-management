@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="flex flex-col items-center justify-normal md:justify-center py-8 bg-surface-200 w-full min-h-full gap-4"
+	class="flex flex-col items-center justify-normal md:justify-center p-4 bg-surface-200 w-full min-h-full gap-4"
 >
 	<div class="w-full md:w-2/3 h-full flex flex-col gap-2">
 		<h1 class="text-center text-xl font-bold">
