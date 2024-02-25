@@ -28,7 +28,7 @@
 <div id="home" class="flex flex-col items-center" transition:fade>
 	<div
 		id="home"
-		class={`relative flex flex-col items-center justify-center w-full text-white shadow-md shadow-gray-500 h-screen transition-all duration-500`}
+		class={`bg-black relative flex flex-col items-center justify-center w-full text-white shadow-md shadow-gray-500 h-screen transition-all duration-500`}
 		class:reduced={isReduced && loaded}
 		style={`--max-height: ${maxHeight}px; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('photo_main.jpg');; background-repeat: no-repeat; background-size: cover; background-position: center;`}
 	>
