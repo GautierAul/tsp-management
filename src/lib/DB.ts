@@ -224,6 +224,13 @@ export const articlesList: Article[] = [
 
 export const reviewList: Review[] = [
 	{
+		name: 'Fabien Lucron',
+		company: 'Primeum',
+		content:
+			'Primeum a fait appel à Hervé pour consolider les aptitudes du Codir et de nos managers. Sa capacité d’adaptation au contexte de l’entreprise ainsi qu’aux besoins individuels nous ont été précieux. Une formation au management nous en avons tous vécu au préalable, celle que Hervé nous a donnée est pleine d’humanité et de techniques appliquables rapidement, je l’en remercie encore au nom de toute notre équipe de direction.',
+		poste: 'CODIR'
+	},
+	{
 		name: 'Julie Misère',
 		company: 'CHU Sainte Justine',
 		content:

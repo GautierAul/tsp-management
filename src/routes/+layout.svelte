@@ -1,10 +1,8 @@
 <script lang="ts">
 	import { smallScreen, screenHeight, hideScreen } from '$lib/stores';
 	import '../app.css';
-	import Footer from './_components/Footer.svelte';
 	import Header from './_components/Header/Header.svelte';
 	import Contacts from './_components/SideModal/Contacts.svelte';
-	import WorkInProgress from './_components/WorkInProgress.svelte';
 	import { onNavigate } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
@@ -44,10 +42,18 @@
 			{!loaded ? 'overflow-y-hidden' : ''}
 			flex justify-center w-full bg-surface-600"
 	>
-		<div class="w-full">
-			<slot />
+		<div class="w-full h-full flex flex-col justify-between">
+			<div class="grow">
+				<slot />
+			</div>
+			{#if $page.route.id !== '/mentions-legales'}
+				<div class="bg-black text-white text-center p-4">
+					<a href="/mentions-legales" class="underline"> Mentions légales </a>
+				</div>
+			{/if}
 		</div>
 	</div>
+
 	<!-- <WorkInProgress /> -->
 	<!-- {#if $smallScreen}
 		<Footer />

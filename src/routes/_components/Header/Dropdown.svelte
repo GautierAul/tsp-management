@@ -17,14 +17,14 @@
 	let activeClass = 'font-bold';
 	let subActiveClass = 'font-semibold';
 
-	const containedLinks = item.items?.map((item) => item.link);
+	const containedLinks = item.items?.map((item) => item.link)!;
 </script>
 
 <div class="flex flex-col">
 	{#if item.items}
 		<button
 			class={`flex flex-row items-center justify-center gap-2 p-2 transition-colors duration-300 rounded-t-lg hover:bg-surface-600 
-			${containedLinks?.includes($page.url.pathname) ? subActiveClass : ''}
+			${containedLinks.includes($page.route.id) ? subActiveClass : ''}
 			${show ? 'bg-surface-600' : 'bg-white'}`}
 			on:click={() => {
 				show = !show;
@@ -46,7 +46,7 @@
 					{#each item.items as headerItem}
 						<button
 							class={`flex flex-row items-center justify-center gap-2 p-2 transition-all duration-300 hover:bg-surface-600 rounded-xl ${
-								$page.url.pathname === headerItem.link ? activeClass : ''
+								$page.route.id === headerItem.link ? activeClass : ''
 							}`}
 							on:click={() => {
 								show = !show;

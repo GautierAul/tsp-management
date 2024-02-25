@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { fade, slide } from 'svelte/transition';
+	import { fade } from 'svelte/transition';
 	import ProfilesList from './_components/Profiles/ProfilesList.svelte';
 	import Separator from './_components/Separator.svelte';
 	import { footerHeight, headerHeight, hideScreen, screenHeight } from '$lib/stores';
@@ -35,12 +35,12 @@
 		<img
 			src="/herve-dir.png"
 			alt="Logo"
-			class="h-56 md:h-72 aspect-auto absolute left-0 lg:left-[15%] mx-auto text-center bg-blue-500 rounded-r-3xl lg:rounded-3xl bg-opacity-50"
+			class="h-52 md:h-72 aspect-auto absolute left-0 lg:left-[15%] mx-auto text-center bg-blue-500 rounded-r-3xl lg:rounded-3xl bg-opacity-50"
 		/>
 		<img
 			src="/herve-dessin-pompier.png"
 			alt="Logo"
-			class="h-56 md:h-72 aspect-auto absolute right-0 lg:right-[15%] mx-auto text-center bg-lightred-500 rounded-l-3xl lg:rounded-3xl bg-opacity-50 p-1"
+			class="h-52 md:h-72 aspect-auto absolute right-0 lg:right-[15%] mx-auto text-center bg-lightred-500 rounded-l-3xl lg:rounded-3xl bg-opacity-50 p-1"
 		/>
 		<!-- class={`flex flex-col gap-4 items-center justify-center bg-black bg-opacity-40 p-8 w-full text-center`} -->
 		<!-- {#if loaded} -->
@@ -76,8 +76,8 @@
 		</div>
 		<div class="flex flex-col gap-4 items-center justify-center w-full grow p-2">
 			<h1 class="text-lg md:text-xl text-center">
-				La double expérience de Directeur Commercial et officer Sapeur-Pompier au service du
-				management
+				La double expérience de <b>Directeur Commercial</b> et <b>officer Sapeur-Pompier</b> au service
+				du management
 			</h1>
 		</div>
 		<!-- {/if} -->
