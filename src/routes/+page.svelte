@@ -13,7 +13,8 @@
 		loaded = true;
 	});
 
-	$: maxHeight = $screenHeight - ($headerHeight * 2 + $footerHeight);
+	let reduce = 0;
+	$: maxHeight = $screenHeight - reduce;
 
 	let isReduced = false;
 	function reduceSize() {
@@ -22,6 +23,9 @@
 
 	$: if (!$hideScreen) {
 		isReduced = true;
+		reduce = 200;
+	} else {
+		reduce = 0;
 	}
 </script>
 
@@ -32,16 +36,6 @@
 		class:reduced={isReduced && loaded}
 		style={`--max-height: ${maxHeight}px; background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('photo_main.jpg');; background-repeat: no-repeat; background-size: cover; background-position: center;`}
 	>
-		<img
-			src="/herve-dir.png"
-			alt="Logo"
-			class="h-52 md:h-72 aspect-auto absolute left-0 lg:left-[15%] mx-auto text-center bg-blue-500 rounded-r-3xl lg:rounded-3xl bg-opacity-50"
-		/>
-		<img
-			src="/herve-dessin-pompier.png"
-			alt="Logo"
-			class="h-52 md:h-72 aspect-auto absolute right-0 lg:right-[15%] mx-auto text-center bg-lightred-500 rounded-l-3xl lg:rounded-3xl bg-opacity-50 p-1"
-		/>
 		<!-- class={`flex flex-col gap-4 items-center justify-center bg-black bg-opacity-40 p-8 w-full text-center`} -->
 		<!-- {#if loaded} -->
 		<!-- <h1 class="text-4xl font-bold">Hervé Aulner - Team Spirit & Performance</h1>
@@ -56,8 +50,14 @@
 				Augmentez votre impact managérial pour booster vos performances collectives
 			</h2>
 		</div>
-		<div class="relative p-2 grow w-full">
-			<div class="flex flex-col gap-2 items-center justify-center w-full h-full p-4 rounded-3xl">
+		<div class="relative grow w-full flex items-center justify-between md:justify-around">
+			<img
+				src="/herve-dir.png"
+				alt="Logo"
+				class="h-56 md:h-72 aspect-auto text-center bg-blue-500 rounded-r-3xl lg:rounded-3xl bg-opacity-50"
+			/>
+
+			<div class="flex flex-col gap-2 items-center justify-center w-fit h-full p-4 rounded-3xl">
 				{#if $hideScreen}
 					<button
 						class="bg-gradient-to-tr from-darkred-500 to-darkred-400 text-white px-4 py-2 rounded-full font-semibold bg-pan-tl"
@@ -73,11 +73,16 @@
 					<a href="/FLYER_TSP.pdf" download>Télécharger mon flyer</a>
 				</Button>
 			</div>
+			<img
+				src="/herve-dessin-pompier.png"
+				alt="Logo"
+				class="h-56 md:h-72 aspect-auto text-center bg-lightred-500 rounded-l-3xl lg:rounded-3xl bg-opacity-50 p-1"
+			/>
 		</div>
 		<div class="flex flex-col gap-4 items-center justify-center w-full grow p-2">
 			<h1 class="text-lg md:text-xl text-center">
-				La double expérience de <b>Directeur Commercial</b> et <b>officer Sapeur-Pompier</b> au service
-				du management
+				L’expérience d'officier sapeur-pompier, chef d'unité opérationnelle et de directeur
+				commercial au service de votre entreprise !
 			</h1>
 		</div>
 		<!-- {/if} -->
