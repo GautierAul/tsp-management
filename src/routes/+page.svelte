@@ -70,7 +70,7 @@
 					</button>
 				{/if}
 				<Button>
-					<a href="/FLYER_TSP.pdf" download>Télécharger mon flyer</a>
+					<a href="/FLYER_TSP_2024.pdf" download>Télécharger mon flyer</a>
 				</Button>
 			</div>
 			<img
