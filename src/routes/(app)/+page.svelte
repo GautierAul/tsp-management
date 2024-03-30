@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
-	import ProfilesList from './_components/Profiles/ProfilesList.svelte';
-	import Separator from './_components/Separator.svelte';
 	import { footerHeight, headerHeight, hideScreen, screenHeight } from '$lib/stores';
-	import Button from './_components/Button.svelte';
 	import { ChevronRightIcon } from 'svelte-feather-icons';
+	import Separator from '../_components/Separator.svelte';
+	import ProfilesList from '../_components/Profiles/ProfilesList.svelte';
+	import Button from '../_components/Button.svelte';
 
 	let loaded: boolean = false;
 
@@ -23,6 +23,8 @@
 	$: if (!$hideScreen) {
 		isReduced = true;
 	}
+
+	$: console.log($hideScreen);
 </script>
 
 <div id="home" class="flex flex-col items-center" transition:fade>

@@ -11,36 +11,43 @@
 	type headerItem = {
 		title: string;
 		link?: string;
+		active?: string;
 		items?: headerItem[];
 	};
 
 	const headerItems: headerItem[] = [
 		{
 			title: 'Accueil',
-			link: '/'
+			link: '/',
+			active: '/(app)'
 		},
 		{
 			title: 'Offres',
-			link: '/offres'
+			link: '/offres',
+			active: '/(app)/offres'
 		},
 		{
 			title: "Plus d'infos",
 			items: [
 				{
 					title: 'Contacts',
-					link: '/contacts'
+					link: '/contacts',
+					active: '/(app)/contacts'
 				},
 				{
 					title: 'Mes coups de cœurs',
-					link: '/coupdecoeurs'
+					link: '/coupdecoeurs',
+					active: '/(app)/coupdecoeurs'
 				},
 				{
 					title: 'Articles',
-					link: '/articles'
+					link: '/articles',
+					active: '/(app)/articles'
 				},
 				{
 					title: 'Témoignages',
-					link: '/temoignages'
+					link: '/temoignages',
+					active: '/(app)/temoignages'
 				}
 			]
 		}
@@ -96,7 +103,7 @@
 				{#if headerItem.link}
 					<button
 						class={`flex flex-row items-center justify-center gap-2 p-2 transition-all duration-300 hover:bg-surface-600 rounded-xl ${
-							$page.route.id === headerItem.link ? activeClass : ''
+							$page.route.id === headerItem.active ? activeClass : ''
 						}`}
 						on:click={() => {
 							headerItem.link && goto(headerItem.link);

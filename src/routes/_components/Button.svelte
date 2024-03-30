@@ -14,7 +14,7 @@
 	$: if (!customBg) {
 		switch (type) {
 			case 'primary':
-				bgColor = 'bg-darkred-500 hover:bg-darkred-400 border border-surface-900';
+				bgColor = 'bg-darkred-500 hover:bg-darkred-400 border border-surface-900 text-white';
 				break;
 			case 'secondary':
 				bgColor =
@@ -33,7 +33,7 @@
 </script>
 
 <button
-	class={'w-fit px-4 py-2 transition-colors duration-500 rounded-full text-base flex gap-2 ' +
+	class={'w-fit px-4 py-2 transition-colors duration-500 rounded-full text-base flex gap-2  ' +
 		bgColor +
 		' ' +
 		(loading || disabled ? 'bg-opacity-80' : '')}

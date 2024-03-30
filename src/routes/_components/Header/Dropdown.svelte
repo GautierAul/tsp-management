@@ -7,6 +7,7 @@
 	type headerItem = {
 		title: string;
 		link?: string;
+		active?: string;
 		items?: headerItem[];
 	};
 
@@ -46,7 +47,7 @@
 					{#each item.items as headerItem}
 						<button
 							class={`flex flex-row items-center justify-center gap-2 p-2 transition-all duration-300 hover:bg-surface-600 rounded-xl ${
-								$page.route.id === headerItem.link ? activeClass : ''
+								$page.route.id === headerItem.active ? activeClass : ''
 							}`}
 							on:click={() => {
 								show = !show;

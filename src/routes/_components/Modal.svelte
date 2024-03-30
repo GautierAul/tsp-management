@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { XIcon } from 'svelte-feather-icons';
+
 	export let showModal: boolean; // boolean
 
 	let dialog: HTMLDialogElement; // HTMLDialogElement
@@ -14,16 +16,21 @@
 >
 	<!-- svelte-ignore a11y-no-static-element-interactions -->
 	<div on:click|stopPropagation class="flex flex-col gap-2">
+		<div class="flex justify-end w-full">
+			<button on:click={() => dialog.close()}>
+				<XIcon />
+			</button>
+		</div>
 		<slot name="header" />
 		<hr />
 		<slot />
 		<hr />
-		<div class="flex w-full justify-end">
+		<!-- <div class="flex w-full justify-end">
 			<button
 				class="bg-darkred-500 px-4 py-2 rounded-full text-white w-fit"
 				on:click={() => dialog.close()}>Retour</button
 			>
-		</div>
+		</div> -->
 	</div>
 </dialog>
 

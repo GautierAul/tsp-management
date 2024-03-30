@@ -9,6 +9,7 @@ export type Formule = {
 };
 
 export type Article = {
+	id?: number;
 	title: string;
 	description?: string;
 	link: string;
@@ -76,7 +77,7 @@ export const formulesList: Formule[] = [
 	}
 ];
 
-export const articlesList: Article[] = [
+export let articlesList: Article[] = [
 	{
 		title:
 			"5 leviers pour une gouvernance adaptative inspirée par l'environnement des Sapeurs-Pompiers (actionco.fr)",

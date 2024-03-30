@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { smallScreen, screenHeight, hideScreen } from '$lib/stores';
-	import '../app.css';
-	import Header from './_components/Header/Header.svelte';
-	import Contacts from './_components/SideModal/Contacts.svelte';
+	import '../../app.css';
 	import { onNavigate } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
+	import Contacts from '../_components/SideModal/Contacts.svelte';
+	import Header from '../_components/Header/Header.svelte';
 
 	let innerWidth = 0;
 
@@ -24,7 +24,8 @@
 
 	let loaded = false;
 	onMount(() => {
-		if ($page.route.id === '/') {
+		console.log($page.route.id);
+		if ($page.route.id === '/(app)') {
 			$hideScreen = true;
 		}
 		loaded = true;
@@ -47,8 +48,8 @@
 				<slot />
 			</div>
 			{#if $page.route.id !== '/mentions-legales'}
-				<div class="bg-black text-white text-center p-4">
-					<a href="/mentions-legales" class="underline"> Mentions légales </a>
+				<div class="bg-surface-900 text-white text-center p-4 shadow-lg shadow-black">
+					<a href="/mentions-legales" class="underline hover:font-semibold"> Mentions légales </a>
 				</div>
 			{/if}
 		</div>

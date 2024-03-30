@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { articlesList, type Article } from '$lib/DB';
-	import ArticleButton from '../_components/ArticleButton.svelte';
+	import { articlesList } from '$lib/DB';
+	import ArticleButton from '../../_components/ArticleButton.svelte';
 
 	let articlesByYear: any = [];
 	articlesList.forEach((article) => {
