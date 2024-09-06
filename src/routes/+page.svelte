@@ -3,9 +3,10 @@
 	import { fade } from 'svelte/transition';
 	import ProfilesList from './_components/Profiles/ProfilesList.svelte';
 	import Separator from './_components/Separator.svelte';
-	import { footerHeight, headerHeight, hideScreen, screenHeight } from '$lib/stores';
+	import { hideScreen, screenHeight } from '$lib/stores';
 	import Button from './_components/Button.svelte';
-	import { ChevronRightIcon } from 'svelte-feather-icons';
+	import { distinctionsList } from '$lib/DB';
+	import DisctinctionItem from './_components/DisctinctionItem.svelte';
 
 	let loaded: boolean = false;
 
@@ -113,31 +114,10 @@
 			Mon parcours, source de fierté, a permis d'accumuler plusieurs prix et distinctions grâce à
 			l'expérience acquise.
 		</span>
-		<div class="flex flex-col gap-2 mt-2">
-			<a
-				href="https://www.actionco.fr/Thematique/strategie-commerciale-1218/Diaporamas/tac2019-qui-sont-laureats-2019-345382/animation-commerciale-points-vente-poste-remporte--345383.htm"
-				class="bg-surface-500 shadow-sm shadow-surface-800 border border-black rounded-xl p-2 flex justify-between gap-4 items-center group"
-				target="_blank"
-			>
-				<span> Trophée Action Co - 2019 </span>
-				<div
-					class="border border-surface-800 rounded-full group-hover:rotate-[360deg] transition-all duration-700"
-				>
-					<ChevronRightIcon />
-				</div>
-			</a>
-			<a
-				href="https://www.actionco.fr/Thematique/management-1214/Breves/Trophees-2014-Managers-annee-decouvrez-podium-247901.htm"
-				class="bg-surface-500 shadow-sm shadow-surface-800 border border-black rounded-xl p-2 flex justify-between gap-4 items-center group"
-				target="_blank"
-			>
-				<span> Trophée Action Co - 2014 </span>
-				<div
-					class="border border-surface-800 rounded-full group-hover:rotate-[360deg] transition-all duration-1000"
-				>
-					<ChevronRightIcon />
-				</div>
-			</a>
+		<div class="flex flex-col gap-2 mt-2 items-center">
+			{#each distinctionsList as distinction}
+				<DisctinctionItem {distinction} />
+			{/each}
 		</div>
 	</div>
 	<Separator />

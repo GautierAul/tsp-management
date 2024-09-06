@@ -22,6 +22,19 @@ export type Review = {
 	poste: string;
 };
 
+export type Distinction = {
+	title: string;
+	description?: string;
+	year?: number;
+	link: string;
+};
+
+export type CoupDeCoeur = {
+	title: string;
+	description: string;
+	link: string;
+};
+
 export const formulesList: Formule[] = [
 	{
 		title: "S'initier",
@@ -79,9 +92,15 @@ export const formulesList: Formule[] = [
 export const articlesList: Article[] = [
 	{
 		title:
+			'[Tribune] Écouter et décider pour obtenir performance...et QVT - Green Business - Actionco.fr',
+		link: 'https://www.actionco.fr/Thematique/management-1214/Breves/leviers-gouvernance-adaptative-inspiree-environnement-386943.htm',
+		year: 2024
+	},
+	{
+		title:
 			"5 leviers pour une gouvernance adaptative inspirée par l'environnement des Sapeurs-Pompiers (actionco.fr)",
 		link: 'https://www.actionco.fr/Thematique/management-1214/Breves/leviers-gouvernance-adaptative-inspiree-environnement-386943.htm',
-		year: 2023
+		year: 2024
 	},
 	{
 		title: 'Le management au féminin existe-t-il ? (actionco.fr)',
@@ -293,5 +312,43 @@ export const reviewList: Review[] = [
 		content:
 			'Hervé nous présente sa vision de la gestion empreinte de bienveillance, et nous inspire à devenir de meilleurs leaders en des mots simples, clairs et qui touchent au cœur. Merci pour ce beau moment !',
 		poste: 'Directrice de comptes principales'
+	}
+];
+
+export const distinctionsList: Distinction[] = [
+	{
+		title: 'Trophée Action Co - 2019',
+		link: 'https://www.actionco.fr/Thematique/strategie-commerciale-1218/Diaporamas/tac2019-qui-sont-laureats-2019-345382/animation-commerciale-points-vente-poste-remporte--345383.htm'
+	},
+	{
+		title: 'Trophée Action Co - 2014',
+		link: 'https://www.actionco.fr/Thematique/management-1214/Breves/Trophees-2014-Managers-annee-decouvrez-podium-247901.htm'
+	}
+];
+
+export let coupDeCoeurList: CoupDeCoeur[] = [
+	{
+		title: "Coopération en entreprise VS bureaucratie : une bataille loin d'être gagnée d'avance.",
+		description: 'Un impératif ! Faire réussir une équipe hétérogène dans un but commun',
+		link: 'https://www.hbrfrance.fr/organisation/cooperation-en-entreprise-une-bataille-contre-la-bureaucratie-qui-nest-pas-gagnee-davance-60226'
+	},
+	{
+		title: 'Management par le sourire : souriez, vous êtes un(e) manager ! - Managers',
+		description:
+			'« Je ne souris pas parce-que je suis heureux ; je suis heureux parce-que je souris » et en plus, d’après les neurosciences cela rendrait plus intelligent.',
+		link: 'https://managers.tn/2019/11/19/management-par-le-sourire-souriez-vous-etes-une-manager/'
+	},
+	{
+		title:
+			"L'humilité du dirigeant, source de performance pour l'entreprise, Management (lesechos.fr)",
+		description:
+			'Douter de ses compétences et une compétence ; en conservant l’estime de soi…c’est trouver le bon équilibre de l’égo.',
+		link: 'https://business.lesechos.fr/entrepreneurs/management/0702851680022-l-humilite-du-dirigeant-source-de-performance-pour-l-entreprise-350471.php#:~:text=Les%20%C3%A9tudes%20montrent%20que%20lorsque,se%20renforcent%20dans%20leur%20%C3%A9quipe.&text=D%C3%A9montrer%20une%20humilit%C3%A9%20situationnelle%20passe,erreurs%20et%20de%20vos%20lacunes.'
+	},
+	{
+		title: 'Management : quand la confiance doit exclure le contrôle - Management (ampproject.org)',
+		description:
+			'L’accompagnement est pour faire progresser et va au-delà du contrôle pour le contrôle.',
+		link: 'https://business-lesechos-fr.cdn.ampproject.org/c/s/business.lesechos.fr/amp/70/346270.php'
 	}
 ];
