@@ -19,7 +19,7 @@ export type Review = {
 	name: string;
 	company: string;
 	content: string;
-	poste: string;
+	poste?: string;
 };
 
 export type Distinction = {
@@ -242,6 +242,13 @@ export const articlesList: Article[] = [
 ];
 
 export const reviewList: Review[] = [
+	{
+		name: 'Y.A',
+		company: 'CODIR IDEA CONSTRUCTION-NOVAHOMES',
+		content: `« Au début de l'année, j'ai demandé un coaching pour renforcer ma confiance en moi, mon leadership et mon assertivité ; mon directeur général a confié cette mission à Hervé.
+Nous avons abordé des méthodes, mais Hervé m'a d'abord aidé à réfléchir sur mon identité, mes croyances limitantes, mes atouts et ma résilience face à des situations complexes.
+J'avais déjà tenté de travailler sur ces aspects par le passé, sans succès. Le coaching avec Hervé a été extrêmement fructueux, m'amenant à une réelle prise de conscience de mes capacités. Désormais, je sais gérer les situations en acceptant mes émotions, ce qui me permet d'utiliser les méthodes et outils de manière optimale. Cet accompagnement m'a véritablement permis de progresser et de m'améliorer ! Merci Hervé pour ton écoute, ton professionnalisme et ton soutien »`
+	},
 	{
 		name: 'Fabien Lucron',
 		company: 'Primeum',

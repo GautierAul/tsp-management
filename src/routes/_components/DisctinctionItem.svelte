@@ -15,7 +15,7 @@
 	on:mouseenter={() => (opened = true)}
 	on:mouseleave={() => (opened = false)}
 >
-	<span> {distinction.title} d</span>
+	<span> {distinction.title}</span>
 	<div class="border border-surface-800 rounded-full flex items-center gap-1 px-2">
 		{#if opened}
 			<span class="pb-[0.2px] text-sm" transition:slide={{ axis: 'x' }}> Voir </span>

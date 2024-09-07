@@ -20,7 +20,7 @@
 		}}
 	>
 		<div class="flex flex-col gap-2 w-10/12">
-			<span class="font-semibold">{review.name} - {review.poste}</span>
+			<span class="font-semibold">{review.name} {review.poste ? ' - ' + review.poste : ''}</span>
 			<span class="font-normal">{review.company}</span>
 		</div>
 
