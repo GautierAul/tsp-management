@@ -243,6 +243,29 @@ export const articlesList: Article[] = [
 
 export const reviewList: Review[] = [
 	{
+		name: 'Celal KARABAY',
+		company: 'Nova Home et Idea Construction',
+		poste: 'Président Directeur Général',
+		content: `Les principales sociétés de notre groupe, Nova Home et Idea Construction ayant évolué très fortement, j’ai été amené à multiplier par 3 les cadres en moins de 3 ans. <br />
+J’ai rapidement ressenti le besoin de prendre du recul sur nos process afin de préserver et améliorer nos performances humaines et organisationnelles. <br />
+Hervé nous a accompagné dans l’analyse de certains processus et dans le fonctionnement de notre collectif, il nous a proposé et accompagné dans des plans d’actions pertinents et concret. <br />
+Il a également accompagné en coaching 3 membres du CODIR. <br />
+Hervé nous a organisé un séminaire (avec sa conférence) pour célébrer nos réussites et démontrer à nouveau la force d’un vrai collectif où chacun se sent co-responsable de la réussite du groupe. <br />
+L’accompagnement, les coachings et le séminaire ont été très efficaces et ont fait du bien à notre collectif. <br />
+Les approches atypiques d’Hervé nous ont invité et nous invitent encore à devenir meilleur en co-construction.`
+	},
+	{
+		name: 'Cyrielle Brunetti',
+		company: 'APEC',
+		poste: 'Consultante Développement Professionnel',
+		content: `Pour bien aborder la rentrée avec les cadres accompagnés par l’APEC, nous avons organisé au centre Apec de Metz une intervention avec pour thème : « Renforcer sa posture de réussite par la compréhension de soi en faisant le lien avec le monde des sapeurs pompiers »
+
+ <br />Et tout ça dans la bonne humeur ! <br />
+
+Encore Merci Hervé AULNER pour cette journée enrichissante notamment avec l’apport des méthodes de préparation mentale et des leviers de performance inspirés du monde des sapeurs pompiers.
+`
+	},
+	{
 		name: 'Y.A',
 		company: 'CODIR IDEA CONSTRUCTION-NOVAHOMES',
 		content: `« Au début de l'année, j'ai demandé un coaching pour renforcer ma confiance en moi, mon leadership et mon assertivité ; mon directeur général a confié cette mission à Hervé.

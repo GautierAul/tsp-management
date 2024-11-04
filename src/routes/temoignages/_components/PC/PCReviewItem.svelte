@@ -35,7 +35,7 @@
 	{#if show}
 		<span
 			class="absolute top-full left-0 z-10 border border-black p-6 text-justify bg-surface-300 scale-[1.02] rounded-lg shadow-2xl"
-			transition:slide>{review.content}</span
+			transition:slide>{@html review.content}</span
 		>
 	{/if}
 </div>
