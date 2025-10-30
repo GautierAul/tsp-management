@@ -27,12 +27,19 @@
 		if ($page.route.id === '/') {
 			$hideScreen = true;
 		}
-		loaded = true;
+
+		setTimeout(() => {
+			loaded = true;
+		}, 100);
 	});
 </script>
 
 <svelte:window bind:innerWidth bind:innerHeight={$screenHeight} />
-<div class="flex flex-col h-screen bg-white">
+<div
+	class="flex flex-col h-screen bg-white transition-opacity duration-500"
+	class:opacity-100={loaded}
+	class:opacity-0={!loaded}
+>
 	<Contacts />
 	{#if !$hideScreen && loaded}
 		<Header />
