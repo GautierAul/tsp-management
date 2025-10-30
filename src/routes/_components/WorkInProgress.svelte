@@ -3,7 +3,7 @@
 	<div class="flex flex-col items-start">
 		<span>Ce site est en cours de construction. Merci de votre compréhension.</span>
 		<span class="font-normal"
-			>En attendant : <a href="/FLYER_TSP_2024.pdf" class="underline" download
+			>En attendant : <a href="/FLYER_TSP_2025.pdf" class="underline" download
 				>Télécharger mon flyer</a
 			></span
 		>

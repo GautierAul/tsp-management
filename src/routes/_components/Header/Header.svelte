@@ -37,11 +37,11 @@
 				{
 					title: 'Articles',
 					link: '/articles'
-				},
-				{
-					title: 'Témoignages',
-					link: '/temoignages'
 				}
+				// {
+				// 	title: 'Témoignages',
+				// 	link: '/temoignages'
+				// }
 			]
 		}
 	];
@@ -70,7 +70,7 @@
 
 		{#if $smallScreen}
 			<button
-				class="text-2xl p-2 border border-surface-700 rounded-lg"
+				class="text-2xl p-2 bg-surface-500 border border-surface-600 rounded-lg shadow-md"
 				on:click={() => {
 					openHeader = !openHeader;
 				}}

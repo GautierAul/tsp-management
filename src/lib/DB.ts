@@ -37,8 +37,8 @@ export type CoupDeCoeur = {
 
 export const formulesList: Formule[] = [
 	{
-		title: "S'initier",
-		objective: 'Prendre du recul pour faire réussir une équipe hétérogène dans un but commun.',
+		title: "S'inspirer",
+		objective: 'Des conférences inspirantes, pour impulser une dynamique collective',
 		description: [
 			'LES CNT (Compétences Non Techniques) essentielles à la performance',
 			'Le cadre d’organisation VS l’Humain',
@@ -55,9 +55,9 @@ export const formulesList: Formule[] = [
 		imageAlt: 'Hervé en conférence'
 	},
 	{
-		title: 'Approfondir',
+		title: 'Agir',
 		objective:
-			'Favoriser la mise en pratique grâce à la maîtrise des postures, méthodes et outils.',
+			'Une audit stratégique, fondé sur la triade perception-croyance-volonté, afin de réveler les leviers réels de performance',
 		description: [
 			'Prendre conscience de notre responsabilité sur l’engagement et la motivation par la posture du « chef », la compréhension des « autres » et les interactions pour construire un cadre relationnel de fonctionnement (Cadre de Relation et D.I.S.C)',
 			'Comprendre pour mieux agir, comprendre « les leviers » de motivation et travailler sur les actions possibles, les contraintes et les enjeux (quelques approches sociologiques essentielles)',
@@ -73,9 +73,9 @@ export const formulesList: Formule[] = [
 		imageAlt: 'Des élèves en formation dans un cours de management'
 	},
 	{
-		title: "S'entrainer",
+		title: 'Progresser',
 		objective:
-			'Réussir avec des mises en situation professionnelles et s’entrainer sur les postures et outils.',
+			'Des accompagnements collectifs et individuels, pour transformer les prises de conscience en actions concrètes et durables',
 		description: [
 			'Utilisation de la méthode de l’approche par les compétences (APC) qui est apparue en 2013 chez les sapeurs-pompiers. Le manager est auteur de ses apprentissage grâce à des réelles mises en situation de travail sur des problématiques managériales. Pour valoriser et accompagner vers la progression, cela est suivi par des autoévaluations accompagnées qui engendrent des ateliers pédagogiques personnalisés',
 			'Construire une décision et l’annoncer',

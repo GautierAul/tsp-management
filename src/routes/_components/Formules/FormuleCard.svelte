@@ -39,9 +39,7 @@
 
 {#if bgTextColor}
 	<div
-		class={`flex flex-col items-center justify-between p-8 w-full ${
-			index === 1 ? 'border-2' : 'border'
-		} ${borderColor} ${index === 1 ? 'bg-surface-400 ' : 'bg-surface-200 '} rounded gap-2`}
+		class={`flex flex-col items-center justify-between p-8 w-full border-2 ${borderColor} bg-surface-200 rounded gap-2`}
 	>
 		<div class="relative w-fit group">
 			<h3
@@ -56,20 +54,19 @@
 			<img
 				src={formule.image}
 				alt="profil d'hervé"
-				class={`group-hover:scale-105 transition rounded-full ${index === 1 ? 'h-40' : 'h-32'} ${
-					index === 1 ? 'w-40' : 'w-32'
+				class={`group-hover:scale-105 transition rounded-full h-32 w-32
 				} border-4 ${borderColor}`}
 				on:click={() => {
-					showModal = true;
+					// showModal = true;
 				}}
 			/>
 		</div>
 		<div class="flex flex-col gap-2">
-			<span class="font-medium">{formule.objective}</span>
-			<span>Durée : {formule.duration}</span>
-			<span>Format: {formule.format}</span>
+			<span class="text-center">{formule.objective}</span>
+			<!-- <span>Durée : {formule.duration}</span> -->
+			<!-- <span>Format: {formule.format}</span> -->
 		</div>
-		<div class="flex justify-center">
+		<!-- <div class="flex justify-center">
 			<button
 				class="cursor-pointer flex items-center justify-center gap-2 rounded-lg w-fit px-4 py-2 bg-surface-600 font-medium border border-surface-700"
 				on:click={() => {
@@ -79,7 +76,7 @@
 				<span> Plus d'information </span>
 				<ArrowRightCircleIcon />
 			</button>
-		</div>
+		</div> -->
 	</div>
 {/if}
 
