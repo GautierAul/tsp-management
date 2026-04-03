@@ -24,7 +24,7 @@
 
 	$: if (!$hideScreen) {
 		isReduced = true;
-		reduce = 200;
+		reduce = 150;
 	} else {
 		reduce = 0;
 	}
