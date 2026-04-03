@@ -10,9 +10,9 @@
 	const dispatch = createEventDispatcher();
 </script>
 
-<div class="relative flex flex-col border border-darkred-500 rounded-lg w-full md:w-[49%] h-fit">
+<div class="relative flex flex-col border border-darkred-100 shadow-md rounded-lg w-full md:w-[49%] h-fit">
 	<button
-		class={`group flex gap-2 text-left items-center justify-between h-[120px] p-4 rounded-lg hover:bg-surface-500 transition-colors duration-300
+		class={`group flex gap-2 text-left items-center justify-between h-[120px] p-4 rounded-lg hover:bg-surface-400 transition-colors duration-300
         ${show ? 'bg-surface-500' : 'bg-white'}`}
 		on:click={() => {
 			dispatch('open');
@@ -34,7 +34,7 @@
 	</button>
 	{#if show}
 		<span
-			class="absolute top-full left-0 z-10 border border-black p-6 text-justify bg-surface-300 scale-[1.02] rounded-lg shadow-2xl"
+			class="absolute top-full left-0 z-10 border border-darkred-200 p-6 text-justify bg-surface-200 scale-[1.02] rounded-lg shadow-2xl"
 			transition:slide>{@html review.content}</span
 		>
 	{/if}

@@ -20,6 +20,7 @@ export type Review = {
 	company: string;
 	content: string;
 	poste?: string;
+	big?: boolean;
 };
 
 export type Distinction = {
@@ -242,6 +243,16 @@ export const articlesList: Article[] = [
 ];
 
 export const reviewList: Review[] = [
+	{
+		name: 'Sabrina Ars Long',
+		company: 'ENGIE',
+		poste: 'Directrice Commerciale',
+		content: `L’accompagnement d’Hervé a été à la fois exigeant et très concret. Sa conférence, inspirée du monde des sapeurs-pompiers, a volontairement bousculé nos habitudes. Sans discours lissé, elle a permis de provoquer des prises de conscience, individuelles et collectives.<br />
+Les audits menés auprès des collaborateurs et des managers nous ont apporté un regard clair et lucide sur notre fonctionnement. En s’appuyant sur les perceptions, les croyances et la capacité à agir, ils ont mis en évidence des leviers concrets d’engagement et de performance, bien au-delà d’un simple diagnostic social.<br />
+Enfin, un atelier avec les managers a permis de transformer ces constats en un plan d’actions clair, partagé et opérationnel.<br />
+Un accompagnement utile, qui renforce à la fois la responsabilité managériale et la dynamique collective`,
+		big: true
+	},
 	{
 		name: 'Celal KARABAY',
 		company: 'Nova Home et Idea Construction',

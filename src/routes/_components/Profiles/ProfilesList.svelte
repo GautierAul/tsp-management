@@ -51,34 +51,34 @@
 >
 	<div class="flex justify-between items-center w-full md:w-2/3 overflow-x-auto">
 		<button
-			class="flex flex-col items-center p-4 transition-colors-slow rounded
+			class="flex flex-col gap-2 items-center p-4 transition-colors-slow rounded
 	{selectedProfile === 0 ? 'bg-surface-600' : 'hover:bg-surface-600'}"
 			on:click={() => handleClick(0)}
 		>
 			<div class="h-32 w-32 rounded-full border-4 border-lightred-500">
 				<img src="/foracc.jpg" alt="profil d'hervé" class="rounded-full" />
 			</div>
-			<h3 class="text-lightred-500 font-medium">Formateur accompagnateur</h3>
+			<h3 class="text-lightred-500 font-semibold tracking-normal">Formateur accompagnateur</h3>
 		</button>
 		<button
-			class="flex flex-col items-center p-4 transition-colors-slow rounded
+			class="flex flex-col gap-2 items-center p-4 transition-colors-slow rounded
 			{selectedProfile === 1 ? 'bg-surface-600' : 'hover:bg-surface-600'}"
 			on:click={() => handleClick(1)}
 		>
 			<div class="h-32 w-32 rounded-full border-4 border-lightred-500">
 				<img src="/profil-herve.jpg" alt="profil d'hervé" class="rounded-full" />
 			</div>
-			<h3 class="text-lightred-500 font-medium">Directeur commercial</h3>
+			<h3 class="text-lightred-500 font-semibold tracking-normal">Directeur commercial</h3>
 		</button>
 		<button
-			class="flex flex-col items-center p-4 transition-colors-slow rounded
+			class="flex flex-col gap-2 items-center p-4 transition-colors-slow rounded
 			{selectedProfile === 2 ? 'bg-surface-600' : 'hover:bg-surface-600'}"
 			on:click={() => handleClick(2)}
 		>
 			<div class="h-32 w-32 rounded-full border-4 border-lightred-500">
 				<img src="/herve-pompier.png" alt="profil d'hervé" class="rounded-full" />
 			</div>
-			<h3 class="text-lightred-500 font-medium">Officier sapeurs-pompiers</h3>
+			<h3 class="text-lightred-500 font-semibold no-letter-spacinng">Officier sapeurs-pompiers</h3>
 		</button>
 	</div>
 	<div id="profile-content-container" class="w-full md:w-2/3 relative text-darkred-500">

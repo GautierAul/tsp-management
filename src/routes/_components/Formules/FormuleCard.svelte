@@ -33,13 +33,14 @@
 				return 'border-redorange-500';
 		}
 	};
+
 	const bgTextColor: string = getColors(index);
 	const borderColor: string = getBorderColors(index);
 </script>
 
 {#if bgTextColor}
 	<div
-		class={`flex flex-col items-center justify-between p-8 w-full border-2 ${borderColor} bg-surface-200 rounded gap-2`}
+		class={`flex flex-col items-center justify-between p-8 w-full border-2 ${borderColor} shadow-lg bg-surface-200 rounded gap-2`}
 	>
 		<div class="relative w-fit group">
 			<h3

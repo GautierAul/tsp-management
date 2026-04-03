@@ -9,7 +9,7 @@
 	};
 </script>
 
-<div class="flex flex-wrap gap-2 justify-between">
+<div class="flex flex-wrap gap-6 justify-between">
 	{#each reviewList as review, i}
 		<PcReviewItem
 			{review}

@@ -44,10 +44,10 @@
 					Augmentez votre impact managerial pour booster vos performances collectives
 				</h1> -->
 
-		<div class="flex flex-col items-center justify-center text-center w-full grow font-semibold">
-			<h1 class="text-2xl md:text-3xl font-bold text-gradient">2 enjeux majeurs</h1>
-			<h2 class="text-lg md:text-xl underline">Agilité et engagement collaborateurs</h2>
-			<h2 class="mt-4 text-base md:text-lg">
+		<div class="flex flex-col items-center justify-center text-center w-full grow ">
+			<h1 class="text-2xl md:text-3xl font-bold text-gradient title">2 enjeux majeurs</h1>
+			<h2 class="text-lg md:text-xl underline title pt-2">Agilité et engagement collaborateurs</h2>
+			<h2 class="mt-4 text-base md:text-lg title">
 				Augmentez votre impact managérial pour booster vos performances collectives
 			</h2>
 		</div>
@@ -81,7 +81,7 @@
 			/>
 		</div>
 		<div class="flex flex-col gap-4 items-center justify-center w-full grow p-2">
-			<h1 class="text-lg md:text-xl text-center">
+			<h1 class="text-lg md:text-xl text-center title">
 				L’expérience d'officier sapeur-pompier, chef d'unité opérationnelle et de directeur
 				commercial au service de votre entreprise !
 			</h1>
@@ -93,7 +93,7 @@
 		<div
 			class="flex flex-col md:w-2/3 w-full p-8 items-center gap-4 text-center bg-surface-600 scroll-reveal"
 		>
-			<h2 class="text-2xl font-medium">Pourquoi les pompiers réussissent toujours face au feu ?</h2>
+			<h2 class="text-2xl font-semibold base-font">Pourquoi les pompiers réussissent toujours face au feu ?</h2>
 
 			<span>
 				Dans l’environnement Sapeurs-Pompiers la capacité à s’adapter, le mental, la cohésion, et la
@@ -109,7 +109,7 @@
 	<div
 		class="bg-surface-600 w-full flex flex-col items-center gap-2 justify-center p-8 text-center"
 	>
-		<h3 class="font-semibold w-2/3 text-lg">Prix et distinctions</h3>
+		<h3 class="font-semibold w-2/3 text-lg base-font tracking-wide">Prix et distinctions</h3>
 		<span>
 			Mon parcours, source de fierté, a permis d'accumuler plusieurs prix et distinctions grâce à
 			l'expérience acquise.
